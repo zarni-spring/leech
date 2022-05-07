@@ -1,0 +1,10 @@
+dependencies:
+  - repository: https://github.com/okteto/movies-frontend
+    manifest: okteto.yml
+    branch: main
+    variables:
+      - name: ENVIRONMENT
+        value: development
+      - name: DEBUG
+        value: true
+    wait: true
